@@ -1,0 +1,162 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed May 31 10:11:50 2023
+| Host         : DESKTOP-J3PNEB9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    95 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            1 |
+|      7 |            4 |
+|    16+ |           89 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             218 |          108 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              46 |           18 |
+| Yes          | No                    | No                     |            8656 |         2810 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             128 |           61 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+---------------------------------------+-----------------------------------+------------------+----------------+
+|      Clock Signal     |             Enable Signal             |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------+---------------------------------------+-----------------------------------+------------------+----------------+
+|  alu/zero_reg_i_2_n_1 |                                       |                                   |                1 |              1 |
+|  Clk_i_BUFG           |                                       |                                   |                1 |              2 |
+|  Clk_BUFG             | DISPLAY/P2S_SEG/data_count[6]_i_1_n_0 |                                   |                3 |              7 |
+|  Clk_BUFG             |                                       | DISPLAY/P2S_LED/s_clk_i_1_n_0     |                3 |              7 |
+|  Clk_BUFG             |                                       | DISPLAY/P2S_SEG/s_clk_i_1_n_0     |                2 |              7 |
+|  Clk_BUFG             | DISPLAY/P2S_LED/data_count[6]_i_1_n_0 |                                   |                4 |              7 |
+|  Clk_BUFG             |                                       |                                   |                8 |             28 |
+|  MemRead_BUFG         |                                       |                                   |               32 |             32 |
+|  Clk_BUFG             |                                       | PC[31]_i_1_n_1                    |               13 |             32 |
+| ~Clk_BUFG             | registers/regFile[0][31]_i_2_n_1      | registers/regFile[0][31]_i_1_n_1  |               15 |             32 |
+| ~Clk_BUFG             | registers/regFile[10][31]_i_2_n_1     | registers/regFile[10][31]_i_1_n_1 |               13 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_105                     |                                   |               11 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_110                     |                                   |               22 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_114                     |                                   |               17 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_106                     |                                   |               16 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_111                     |                                   |               10 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_113                     |                                   |               12 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_115                     |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_116                     |                                   |               24 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_117                     |                                   |               10 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_104                     |                                   |                9 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_107                     |                                   |               11 |             32 |
+| ~Clk_BUFG             | registers/regFile[13][31]_i_1_n_1     |                                   |               11 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_118                     |                                   |               11 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_112                     |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_119                     |                                   |               12 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_120                     |                                   |                9 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_121                     |                                   |               12 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_108                     |                                   |               10 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_109                     |                                   |               16 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_103                     |                                   |               12 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_127                     |                                   |                8 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_124                     |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_125                     |                                   |                7 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_126                     |                                   |                8 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_122                     |                                   |                7 |             32 |
+| ~Clk_BUFG             | alu/PC_reg[6]_123                     |                                   |                7 |             32 |
+| ~Clk_BUFG             | alu/memFile[108][31]_i_2_0            |                                   |               11 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_6            |                                   |               17 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_0            |                                   |               16 |             32 |
+| ~Clk_BUFG             | alu/memFile[126][31]_i_3_1            |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_10           |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_1            |                                   |                8 |             32 |
+| ~Clk_BUFG             | alu/memFile[117][31]_i_3_1            |                                   |               11 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_11           |                                   |                9 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_14           |                                   |               23 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_2            |                                   |               10 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_5            |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_9            |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_13           |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[127][31]_i_4_0            |                                   |               22 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_7            |                                   |               26 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_8            |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[126][31]_i_3_2            |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_12           |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_3            |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/memFile[159][31]_i_2_4            |                                   |               12 |             32 |
+| ~Clk_BUFG             | alu/memFile[121][31]_i_2_0            |                                   |                8 |             32 |
+| ~Clk_BUFG             | alu/memFile[117][31]_i_3_0            |                                   |                9 |             32 |
+| ~Clk_BUFG             | alu/memFile[126][31]_i_3_0            |                                   |                6 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_0            |                                   |                7 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_1            |                                   |                6 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_5            |                                   |               17 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_3            |                                   |                7 |             32 |
+| ~Clk_BUFG             | alu/memFile[179][31]_i_5_0            |                                   |               32 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_2            |                                   |                8 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_4            |                                   |                9 |             32 |
+| ~Clk_BUFG             | alu/memFile[179][31]_i_6_0            |                                   |               32 |             32 |
+| ~Clk_BUFG             | alu/memFile[175][31]_i_3_6            |                                   |               22 |             32 |
+| ~Clk_BUFG             | alu/memFile[58][31]_i_2_0             |                                   |               14 |             32 |
+| ~Clk_BUFG             | alu/memFile[58][31]_i_2_2             |                                   |               32 |             32 |
+| ~Clk_BUFG             | alu/memFile[87][31]_i_2_1             |                                   |               19 |             32 |
+| ~Clk_BUFG             | alu/memFile[58][31]_i_2_1             |                                   |               32 |             32 |
+| ~Clk_BUFG             | alu/memFile[58][31]_i_2_3             |                                   |               31 |             32 |
+| ~Clk_BUFG             | alu/memFile[87][31]_i_2_0             |                                   |               13 |             32 |
+| ~Clk_BUFG             | alu/memFile[87][31]_i_2_3             |                                   |               21 |             32 |
+| ~Clk_BUFG             | alu/memFile[87][31]_i_2_2             |                                   |               28 |             32 |
+| ~Clk_BUFG             | registers/regFile[14][31]_i_1_n_1     |                                   |               16 |             32 |
+| ~Clk_BUFG             | registers/regFile[1][31]_i_1_n_1      |                                   |               14 |             32 |
+| ~Clk_BUFG             | registers/regFile[11][31]_i_1_n_1     |                                   |               16 |             32 |
+| ~Clk_BUFG             | registers/regFile[2][31]_i_1_n_1      |                                   |               15 |             32 |
+| ~Clk_BUFG             | registers/regFile[7][31]_i_1_n_1      |                                   |               13 |             32 |
+| ~Clk_BUFG             | registers/regFile[3][31]_i_1_n_1      |                                   |               15 |             32 |
+| ~Clk_BUFG             | registers/regFile[8][31]_i_1_n_1      |                                   |               32 |             32 |
+| ~Clk_BUFG             | registers/regFile[6][31]_i_1_n_1      |                                   |               19 |             32 |
+| ~Clk_BUFG             | registers/regFile[12][31]_i_2_n_1     | registers/regFile[12][31]_i_1_n_1 |               15 |             32 |
+| ~Clk_BUFG             | registers/regFile[5][31]_i_1_n_1      |                                   |               16 |             32 |
+| ~Clk_BUFG             | registers/regFile[15][31]_i_1_n_1     |                                   |               13 |             32 |
+| ~Clk_BUFG             | registers/regFile[4][31]_i_1_n_1      |                                   |               12 |             32 |
+| ~Clk_BUFG             | registers/regFile[9][31]_i_2_n_1      | registers/regFile[9][31]_i_1_n_1  |               18 |             32 |
+| ~Clk_BUFG             |                                       |                                   |               28 |             64 |
+|  Clk_BUFG             | DISPLAY/P2S_LED/buff                  |                                   |               20 |             65 |
+|  Clk_BUFG             | DISPLAY/P2S_SEG/buff                  |                                   |               25 |             65 |
+|  n_0_11348_BUFG       |                                       |                                   |               38 |             91 |
+| ~Clk_BUFG             | data_memory/MemWrite                  |                                   |             1624 |           6048 |
++-----------------------+---------------------------------------+-----------------------------------+------------------+----------------+
+
+

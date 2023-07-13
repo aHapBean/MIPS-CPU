@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 30 21:36:54 2023
+# Process ID: 15668
+# Current directory: E:/Archlab/lab06
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8972 E:\Archlab\lab06\lab06.xpr
+# Log file: E:/Archlab/lab06/vivado.log
+# Journal file: E:/Archlab/lab06\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Archlab/lab06/lab06.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/ALUCtrOut}} 
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/ALURes}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/BneFlag}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/IF_ID_Inst}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/IF_ID_iniPC}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/BranchSTALL}} 
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/STALL}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/ID_EX_RegWrite}} 
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/EX_MEM_RegWrite}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+current_wave_config {Top_tb_behav.wcfg}
+add_wave {{/Top_tb/cpu/RegWrite}} 
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config E:/Archlab/lab06/Top_tb_behav.wcfg
+source Top_tb.tcl
+save_wave_config {E:/Archlab/lab06/Top_tb_behav.wcfg}
+close_sim

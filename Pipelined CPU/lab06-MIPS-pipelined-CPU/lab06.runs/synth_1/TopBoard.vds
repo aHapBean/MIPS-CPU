@@ -1,0 +1,781 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 31 10:19:55 2023
+# Process ID: 6772
+# Current directory: E:/Archlab/lab06/lab06.runs/synth_1
+# Command line: vivado.exe -log TopBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopBoard.tcl
+# Log file: E:/Archlab/lab06/lab06.runs/synth_1/TopBoard.vds
+# Journal file: E:/Archlab/lab06/lab06.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopBoard.tcl -notrace
+Command: synth_design -top TopBoard -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9120 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.941 ; gain = 98.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopBoard' [E:/Archlab/lab06/lab06.srcs/sources_1/new/TopBoard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/Archlab/display.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [E:/Archlab/display.v:2]
+WARNING: [Synth 8-350] instance 'DISPLAY' of module 'display' requires 14 connections, but only 12 given [E:/Archlab/lab06/lab06.srcs/sources_1/new/TopBoard.v:63]
+INFO: [Synth 8-6157] synthesizing module 'Top' [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'instMemory' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/new/instMemory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instMemory' (3#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/new/instMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'predictor' [E:/Archlab/lab06/lab06.srcs/sources_1/new/predictor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'predictor' (4#1) [E:/Archlab/lab06/lab06.srcs/sources_1/new/predictor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ctr' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/Ctr.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Ctr' (5#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/Ctr.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (6#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signext' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (7#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'forwardingUnit' [E:/Archlab/lab06/lab06.srcs/sources_1/new/forwardingUnit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'forwardingUnit' (8#1) [E:/Archlab/lab06/lab06.srcs/sources_1/new/forwardingUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtr' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALUCtr.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALUCtr.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtr' (9#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALUCtr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:31]
+WARNING: [Synth 8-567] referenced signal 'shamt' should be on the sensitivity list [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dataMemory' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/dataMemory.v:23]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/dataMemory.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'dataMemory' (11#1) [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/dataMemory.v:23]
+WARNING: [Synth 8-6090] variable 'STALL' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:313]
+WARNING: [Synth 8-6090] variable 'IF_ID_Inst' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:391]
+WARNING: [Synth 8-6090] variable 'IF_ID_Inst' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:397]
+WARNING: [Synth 8-6090] variable 'ID_EX_ReadReg1' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:408]
+WARNING: [Synth 8-6090] variable 'ID_EX_ReadReg2' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:409]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemToReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:415]
+WARNING: [Synth 8-6090] variable 'ID_EX_RegDst' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:416]
+WARNING: [Synth 8-6090] variable 'ID_EX_ALUSrc' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:417]
+WARNING: [Synth 8-6090] variable 'ID_EX_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:418]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemRead' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:419]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:420]
+WARNING: [Synth 8-6090] variable 'ID_EX_Branch' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:421]
+WARNING: [Synth 8-6090] variable 'ID_EX_JalFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:422]
+WARNING: [Synth 8-6090] variable 'ID_EX_ALUOp' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:423]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemToReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:428]
+WARNING: [Synth 8-6090] variable 'ID_EX_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:429]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemRead' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:430]
+WARNING: [Synth 8-6090] variable 'ID_EX_MemWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:431]
+WARNING: [Synth 8-6090] variable 'ID_EX_Branch' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:432]
+WARNING: [Synth 8-6090] variable 'ID_EX_JalFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:433]
+WARNING: [Synth 8-6090] variable 'EX_MEM_WriteReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:440]
+WARNING: [Synth 8-6090] variable 'EX_MEM_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:446]
+WARNING: [Synth 8-6090] variable 'EX_MEM_MemWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:447]
+WARNING: [Synth 8-6090] variable 'EX_MEM_MemRead' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:448]
+WARNING: [Synth 8-6090] variable 'EX_MEM_Branch' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:449]
+WARNING: [Synth 8-6090] variable 'EX_MEM_JalFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:450]
+WARNING: [Synth 8-6090] variable 'EX_MEM_MemToReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:451]
+WARNING: [Synth 8-6090] variable 'EX_MEM_JrFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:452]
+WARNING: [Synth 8-6090] variable 'EX_MEM_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:456]
+WARNING: [Synth 8-6090] variable 'EX_MEM_MemWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:457]
+WARNING: [Synth 8-6090] variable 'EX_MEM_Branch' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:458]
+WARNING: [Synth 8-6090] variable 'EX_MEM_JalFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:459]
+WARNING: [Synth 8-6090] variable 'EX_MEM_JrFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:460]
+WARNING: [Synth 8-6090] variable 'MEM_WB_WriteReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:466]
+WARNING: [Synth 8-6090] variable 'MEM_WB_MemToReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:470]
+WARNING: [Synth 8-6090] variable 'MEM_WB_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:471]
+WARNING: [Synth 8-6090] variable 'MEM_WB_JalFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:472]
+WARNING: [Synth 8-6090] variable 'MEM_WB_JrFlag' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:473]
+WARNING: [Synth 8-6090] variable 'WB_XX_WriteReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:477]
+WARNING: [Synth 8-6090] variable 'WB_XX_MemToReg' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:478]
+WARNING: [Synth 8-6090] variable 'WB_XX_RegWrite' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:479]
+WARNING: [Synth 8-6090] variable 'TotalClk' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:482]
+WARNING: [Synth 8-6090] variable 'PC' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:490]
+WARNING: [Synth 8-6014] Unused sequential element TotalClk_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:311]
+WARNING: [Synth 8-6014] Unused sequential element NOP_run_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:315]
+WARNING: [Synth 8-6014] Unused sequential element ID_EX_Branch_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:329]
+WARNING: [Synth 8-6014] Unused sequential element EX_MEM_Branch_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:337]
+WARNING: [Synth 8-6014] Unused sequential element Tmp_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:365]
+WARNING: [Synth 8-6014] Unused sequential element IF_ID_PC_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:390]
+WARNING: [Synth 8-6014] Unused sequential element ID_EX_PC_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:412]
+WARNING: [Synth 8-6014] Unused sequential element ID_EX_Inst_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:413]
+WARNING: [Synth 8-6014] Unused sequential element EX_MEM_Zero_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:443]
+WARNING: [Synth 8-6014] Unused sequential element EX_MEM_BranchPC_reg was removed.  [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:444]
+WARNING: [Synth 8-3848] Net Out in module/entity Top does not have driver. [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (12#1) [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'TopBoard' (13#1) [E:/Archlab/lab06/lab06.srcs/sources_1/new/TopBoard.v:23]
+WARNING: [Synth 8-3331] design dataMemory has unconnected port reset
+WARNING: [Synth 8-3331] design predictor has unconnected port branch
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[31]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[30]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[29]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[28]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[27]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[26]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[25]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[24]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[23]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[22]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[21]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[20]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[19]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[18]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[17]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[16]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[15]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[14]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[13]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[12]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[11]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[10]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[9]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[8]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[7]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[6]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[5]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[4]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[3]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[2]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[1]
+WARNING: [Synth 8-3331] design predictor has unconnected port iniPCForUpd[0]
+WARNING: [Synth 8-3331] design predictor has unconnected port reset
+WARNING: [Synth 8-3331] design predictor has unconnected port branchTaken
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[31]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[30]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[29]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[28]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[27]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[26]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[25]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[24]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[23]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[22]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[21]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[20]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[19]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[18]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[17]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[16]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[15]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[14]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[13]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[12]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[11]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[10]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[9]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[8]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[7]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[6]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[5]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[4]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[3]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[2]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[1]
+WARNING: [Synth 8-3331] design predictor has unconnected port branchPC[0]
+WARNING: [Synth 8-3331] design instMemory has unconnected port PC_Clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 505.496 ; gain = 173.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[31] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[30] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[29] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[28] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[27] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[26] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[25] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[24] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[23] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[22] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[21] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[20] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[19] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[18] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[17] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[16] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[15] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[14] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[13] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[12] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[11] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[10] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[9] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[8] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[7] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[6] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[5] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[4] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[3] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[2] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[1] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+WARNING: [Synth 8-3295] tying undriven pin data_memory:Out[0] to constant 0 [E:/Archlab/lab06/lab06.srcs/sources_1/new/Top.v:260]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 505.496 ; gain = 173.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 505.496 ; gain = 173.301
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Archlab/lab06/lab06.srcs/constrs_1/new/TopBoard_xdb.xdc]
+Finished Parsing XDC File [E:/Archlab/lab06/lab06.srcs/constrs_1/new/TopBoard_xdb.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Archlab/lab06/lab06.srcs/constrs_1/new/TopBoard_xdb.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 925.613 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 925.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 925.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 925.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "memFile" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "regWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "signExtFlag" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "jalFlag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[66]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[67]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[68]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[69]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[70]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[71]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[72]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[73]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[74]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[75]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[76]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[77]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[78]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[79]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[80]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[81]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[82]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[83]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[84]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[85]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[86]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[87]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[88]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[89]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[90]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[91]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[92]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[93]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[94]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[95]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memFile_reg[96]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BneFlag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'jrFlag_reg' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALUCtr.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUCtrOut_reg' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALUCtr.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'aluRes_reg' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab03/lab03.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'readData_reg' [E:/Archlab/lab06/lab06.srcs/sources_1/imports/sources_1/imports/Archlab/lab04/lab04.srcs/sources_1/new/dataMemory.v:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 300   
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 95    
+	  18 Input     32 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 12    
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 386   
+	  28 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopBoard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module instMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module predictor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module Ctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module Registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 65    
+	   2 Input      1 Bit        Muxes := 65    
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module forwardingUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module ALUCtr 
+Detailed RTL Component Info : 
++---Muxes : 
+	  28 Input      5 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  18 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  18 Input      1 Bit        Muxes := 2     
+Module dataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 256   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 254   
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 61    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "aluOp" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3331] design dataMemory has unconnected port reset
+WARNING: [Synth 8-3331] design dataMemory has unconnected port address[1]
+WARNING: [Synth 8-3331] design dataMemory has unconnected port address[0]
+WARNING: [Synth 8-3331] design instMemory has unconnected port PC_Clk
+WARNING: [Synth 8-3331] design instMemory has unconnected port address[1]
+WARNING: [Synth 8-3331] design instMemory has unconnected port address[0]
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/jrFlag_reg) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/ALUCtrOut_reg[4]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/ALUCtrOut_reg[3]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/ALUCtrOut_reg[2]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/ALUCtrOut_reg[1]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu_ctr/ALUCtrOut_reg[0]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/zero_reg) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[31]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[30]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[29]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[28]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[27]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[26]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[25]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[24]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[23]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[22]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[21]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[20]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[19]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[18]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[17]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[16]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[15]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[14]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[13]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[12]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[11]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[10]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[9]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[8]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[7]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[6]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[5]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[4]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[3]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[2]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[1]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/aluRes_reg[0]) is unused and will be removed from module TopBoard.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[31]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[30]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[29]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[28]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[27]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[26]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[25]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[24]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[23]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[22]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[21]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[20]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[19]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[18]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[17]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[16]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[15]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[14]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[13]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[12]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[11]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[10]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[9]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[8]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[7]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[6]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[5]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[4]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[3]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[2]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[1]) is unused and will be removed from module dataMemory.
+WARNING: [Synth 8-3332] Sequential element (readData_reg[0]) is unused and will be removed from module dataMemory.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ALU         | zero       | 32x1          | LUT            | 
+|ALU         | zero       | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |display       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |display |     1|
+|2     |BUFG    |     1|
+|3     |LUT1    |     1|
+|4     |LUT2    |     1|
+|5     |FDRE    |     2|
+|6     |IBUF    |     8|
+|7     |IBUFGDS |     1|
+|8     |OBUF    |     6|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    28|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 925.613 ; gain = 173.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 925.613 ; gain = 593.418
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [E:/Archlab/display.edif]
+Finished Parsing EDIF File [E:/Archlab/display.edif]
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/led_clk' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/led_do' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/seg_clk' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/seg_do' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 925.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+157 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 925.613 ; gain = 606.457
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 925.613 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Archlab/lab06/lab06.runs/synth_1/TopBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopBoard_utilization_synth.rpt -pb TopBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 10:20:47 2023...

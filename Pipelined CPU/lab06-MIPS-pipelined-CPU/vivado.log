@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 13 10:20:53 2023
+# Process ID: 16656
+# Current directory: C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/521030910206-张祥东-lab06
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2816 C:\Users\天启\Desktop\计算机系统结构实验\计算机系统结构实验提交\521030910206-张祥东-工程\521030910206-张祥东-lab06\lab06.xpr
+# Log file: C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/521030910206-张祥东-lab06/vivado.log
+# Journal file: C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/521030910206-张祥东-lab06\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/521030910206-张祥东-lab06/lab06.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/521030910206-张祥东-lab06'
+INFO: [Project 1-313] Project file moved from 'E:/Archlab/lab06' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.edif'; using path 'E:/Archlab/display.edif' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.v'; using path 'E:/Archlab/display.v' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.edif'; using path 'E:/Archlab/display.edif' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.v'; using path 'E:/Archlab/display.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.edif'; using path 'E:/Archlab/display.edif' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/天启/Desktop/计算机系统结构实验/计算机系统结构实验提交/521030910206-张祥东-工程/display.v'; using path 'E:/Archlab/display.v' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 940.215 ; gain = 90.867
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 13 10:25:24 2023...
